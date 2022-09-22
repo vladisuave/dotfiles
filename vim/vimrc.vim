@@ -124,7 +124,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 " My must haves
-" Plug 'yegappan/taglist'
+Plug 'yegappan/taglist'
 Plug 'majutsushi/tagbar'
 Plug '~/VimPlugins/MultipleSearch'
 " Plug 'ronakg/quickr-cscope.vim'
