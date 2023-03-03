@@ -130,5 +130,15 @@ Plug '~/VimPlugins/MultipleSearch'
 " Plug 'ronakg/quickr-cscope.vim'
 Plug 'joe-skb7/cscope-maps'
 
+Plug 'aklt/plantuml-syntax'
+Plug 'tyru/open-browser.vim'
+Plug 'weirongxu/plantuml-previewer.vim'
+
+au FileType plantuml let g:plantuml_previewer#plantuml_jar_path = get(
+    \  matchlist(system('cat `which plantuml` | grep plantuml.jar'), '\v.*\s[''"]?(\S+plantuml\.jar).*'),
+    \  1,
+    \  0
+    \)
+
 " Initialize plugin system
 call plug#end()
